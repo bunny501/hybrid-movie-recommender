@@ -1,0 +1,101 @@
+movieId,title,genres
+1,The Shawshank Redemption (1994),Drama
+2,The Godfather (1972),Crime|Drama
+3,The Dark Knight (2008),Action|Crime|Drama
+4,Pulp Fiction (1994),Crime|Drama
+5,Schindlers List (1993),Biography|Drama|History
+6,The Lord of the Rings Return of the King (2003),Action|Adventure|Drama
+7,The Good the Bad and the Ugly (1966),Western
+8,Fight Club (1999),Drama|Thriller
+9,Forrest Gump (1994),Drama|Romance
+10,Inception (2010),Action|Adventure|Sci-Fi
+11,The Matrix (1999),Action|Sci-Fi
+12,Goodfellas (1990),Biography|Crime|Drama
+13,The Silence of the Lambs (1991),Crime|Drama|Thriller
+14,Interstellar (2014),Adventure|Drama|Sci-Fi
+15,The Lion King (1994),Animation|Adventure|Drama
+16,Back to the Future (1985),Adventure|Comedy|Sci-Fi
+17,The Departed (2006),Crime|Drama|Thriller
+18,Whiplash (2014),Drama|Music
+19,The Prestige (2006),Drama|Mystery|Sci-Fi
+20,Gladiator (2000),Action|Adventure|Drama
+21,The Green Mile (1999),Crime|Drama|Fantasy
+22,Saving Private Ryan (1998),Drama|War
+23,Casablanca (1942),Drama|Romance|War
+24,Avengers Endgame (2019),Action|Adventure|Sci-Fi
+25,The Truman Show (1998),Comedy|Drama|Sci-Fi
+26,A Beautiful Mind (2001),Biography|Drama
+27,Django Unchained (2012),Drama|Western
+28,Spirited Away (2001),Animation|Adventure|Family
+29,Parasite (2019),Comedy|Drama|Thriller
+30,Joker (2019),Crime|Drama|Thriller
+31,The Wolf of Wall Street (2013),Biography|Comedy|Crime
+32,Braveheart (1995),Action|Biography|Drama
+33,Inglourious Basterds (2009),Adventure|Drama|War
+34,Alien (1979),Horror|Sci-Fi
+35,Blade Runner (1982),Action|Sci-Fi|Thriller
+36,Terminator 2 (1991),Action|Sci-Fi|Thriller
+37,The Shining (1980),Drama|Horror
+38,Psycho (1960),Horror|Mystery|Thriller
+39,Rear Window (1954),Mystery|Thriller
+40,Jurassic Park (1993),Action|Adventure|Sci-Fi
+41,The Sixth Sense (1999),Drama|Mystery|Thriller
+42,Se7en (1995),Crime|Drama|Mystery
+43,American History X (1998),Drama
+44,V for Vendetta (2005),Action|Drama|Sci-Fi
+45,Memento (2000),Mystery|Thriller
+46,No Country for Old Men (2007),Crime|Drama|Thriller
+47,There Will Be Blood (2007),Drama
+48,City of God (2002),Action|Crime|Drama
+49,Requiem for a Dream (2000),Drama|Romance
+50,Eternal Sunshine of the Spotless Mind (2004),Drama|Romance|Sci-Fi
+51,The Grand Budapest Hotel (2014),Comedy|Drama|Romance
+52,Mad Max Fury Road (2015),Action|Adventure|Sci-Fi
+53,Get Out (2017),Horror|Mystery|Thriller
+54,Moonlight (2016),Drama
+55,The Social Network (2010),Biography|Drama
+56,Black Swan (2010),Drama|Thriller
+57,Her (2013),Drama|Romance|Sci-Fi
+58,Drive (2011),Crime|Drama|Thriller
+59,Arrival (2016),Drama|Sci-Fi|Thriller
+60,Ex Machina (2014),Drama|Sci-Fi|Thriller
+61,The Revenant (2015),Adventure|Drama|Western
+62,Dunkirk (2017),Action|Drama|History|War
+63,Hereditary (2018),Drama|Horror|Mystery
+64,A Quiet Place (2018),Drama|Horror|Sci-Fi
+65,Knives Out (2019),Comedy|Crime|Drama|Mystery
+66,1917 (2019),Drama|War
+67,Tenet (2020),Action|Sci-Fi|Thriller
+68,Soul (2020),Animation|Adventure|Drama
+69,The Father (2020),Drama
+70,Nomadland (2020),Drama
+71,Promising Young Woman (2020),Crime|Drama|Thriller
+72,Minari (2020),Drama
+73,Judas and the Black Messiah (2021),Biography|Drama|History
+74,Dune (2021),Action|Adventure|Drama|Sci-Fi
+75,The Power of the Dog (2021),Drama|Western
+76,Belfast (2021),Drama
+77,CODA (2021),Drama
+78,Licorice Pizza (2021),Comedy|Drama|Romance
+79,King Richard (2021),Biography|Drama|Sport
+80,Nightmare Alley (2021),Drama|Mystery|Thriller
+81,Spencer (2021),Biography|Drama
+82,The French Dispatch (2021),Comedy|Drama
+83,Everything Everywhere All at Once (2022),Action|Adventure|Comedy|Drama|Sci-Fi
+84,The Banshees of Inisherin (2022),Comedy|Drama
+85,Tar (2022),Drama|Music
+86,Women Talking (2022),Drama
+87,All Quiet on the Western Front (2022),Drama|War
+88,Elvis (2022),Biography|Drama|Music
+89,Babylon (2022),Comedy|Drama
+90,Avatar The Way of Water (2022),Action|Adventure|Sci-Fi
+91,Oppenheimer (2023),Biography|Drama|History
+92,Killers of the Flower Moon (2023),Biography|Crime|Drama|History|Western
+93,Poor Things (2023),Comedy|Drama|Romance|Sci-Fi
+94,Maestro (2023),Biography|Drama|Music
+95,Past Lives (2023),Drama|Romance
+96,The Zone of Interest (2023),Drama|History|War
+97,American Fiction (2023),Comedy|Drama
+98,Anatomy of a Fall (2023),Crime|Drama|Mystery|Thriller
+99,The Holdovers (2023),Comedy|Drama
+100,Saltburn (2023),Drama|Mystery|Thriller

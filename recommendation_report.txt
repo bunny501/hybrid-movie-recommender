@@ -1,0 +1,134 @@
+=================================================================
+  CONTENT-BASED MOVIE RECOMMENDATION SYSTEM — FULL REPORT
+  MovieLens-Style Dataset | TF-IDF + Cosine Similarity
+=================================================================
+
+── 1. DATASET OVERVIEW ─────────────────────────────────────────
+  Total Movies    : 100
+  Total Ratings   : 1,328
+  Total Users     : 50
+  Unique Genres   : 19  →  Action, Adventure, Animation, Biography, Comedy, Crime, Drama, Family, Fantasy, History...
+  Year Range      : 1942 – 2023
+  Overall Avg Rat.: 3.66
+
+── 2. FEATURE ENGINEERING ──────────────────────────────────────
+  • Genres normalized: '|' replaced with space, lowercased
+  • TF-IDF Vectorizer: word analyzer, unigrams + bigrams
+  • TF-IDF Matrix    : 100 movies × 58 features
+  • Cosine Sim Matrix: 100 × 100
+  • Popularity Score : IMDB-style Bayesian weighted rating
+  • Year extracted   : regex from title string
+
+── 3. CONTENT-BASED RECOMMENDATIONS ────────────────────────────
+
+  Similar to: 'Inception (2010)'
+  Title                                         Genres                                 Sim  AvgRat
+  ────────────────────────────────────────────────────────────────────────────────────────────────
+  Avengers Endgame (2019)                       Action|Adventure|Sci-Fi              1.000    3.50
+  Jurassic Park (1993)                          Action|Adventure|Sci-Fi              1.000    3.84
+  Mad Max Fury Road (2015)                      Action|Adventure|Sci-Fi              1.000    3.73
+  Avatar The Way of Water (2022)                Action|Adventure|Sci-Fi              1.000    3.72
+  Dune (2021)                                   Action|Adventure|Drama|Sci-Fi        0.687    3.86
+  Everything Everywhere All at Once (2022)      Action|Adventure|Comedy|Drama|Sci    0.583    3.91
+  The Lord of the Rings Return of the King (2   Action|Adventure|Drama               0.542    4.14
+  Gladiator (2000)                              Action|Adventure|Drama               0.542    3.39
+
+  Similar to: 'The Godfather (1972)'
+  Title                                         Genres                                 Sim  AvgRat
+  ────────────────────────────────────────────────────────────────────────────────────────────────
+  Pulp Fiction (1994)                           Crime|Drama                          1.000    4.00
+  The Silence of the Lambs (1991)               Crime|Drama|Thriller                 0.702    4.00
+  The Departed (2006)                           Crime|Drama|Thriller                 0.702    3.95
+  Joker (2019)                                  Crime|Drama|Thriller                 0.702    3.73
+  No Country for Old Men (2007)                 Crime|Drama|Thriller                 0.702    3.79
+  Drive (2011)                                  Crime|Drama|Thriller                 0.702    4.06
+  Promising Young Woman (2020)                  Crime|Drama|Thriller                 0.702    3.70
+  Se7en (1995)                                  Crime|Drama|Mystery                  0.657    3.69
+
+  Similar to: 'Get Out (2017)'
+  Title                                         Genres                                 Sim  AvgRat
+  ────────────────────────────────────────────────────────────────────────────────────────────────
+  Get Out (2017)                                Horror|Mystery|Thriller              1.000    3.82
+  Hereditary (2018)                             Drama|Horror|Mystery                 0.686    3.46
+  Rear Window (1954)                            Mystery|Thriller                     0.681    3.85
+  Memento (2000)                                Mystery|Thriller                     0.681    3.78
+  The Sixth Sense (1999)                        Drama|Mystery|Thriller               0.554    3.72
+  Nightmare Alley (2021)                        Drama|Mystery|Thriller               0.554    3.57
+  Saltburn (2023)                               Drama|Mystery|Thriller               0.554    3.82
+  Anatomy of a Fall (2023)                      Crime|Drama|Mystery|Thriller         0.473    3.19
+
+  Similar to: 'Her (2013)'
+  Title                                         Genres                                 Sim  AvgRat
+  ────────────────────────────────────────────────────────────────────────────────────────────────
+  Her (2013)                                    Drama|Romance|Sci-Fi                 1.000    3.88
+  Poor Things (2023)                            Comedy|Drama|Romance|Sci-Fi          0.874    3.50
+  Forrest Gump (1994)                           Drama|Romance                        0.629    3.68
+  Requiem for a Dream (2000)                    Drama|Romance                        0.629    4.11
+  Past Lives (2023)                             Drama|Romance                        0.629    3.38
+  The Grand Budapest Hotel (2014)               Comedy|Drama|Romance                 0.471    3.45
+  Licorice Pizza (2021)                         Comedy|Drama|Romance                 0.471    3.41
+  Casablanca (1942)                             Drama|Romance|War                    0.392    3.73
+
+── 4. PERSONALIZED USER RECOMMENDATIONS ────────────────────────
+
+  User 1 (rated 21 movies, avg 4.0⭐):
+    [0.665] Minari (2020)
+    [0.626] The Father (2020)
+    [0.611] American History X (1998)
+    [0.605] Drive (2011)
+    [0.605] Women Talking (2022)
+
+  User 5 (rated 21 movies, avg 3.5⭐):
+    [0.567] Saltburn (2023)
+    [0.545] Interstellar (2014)
+    [0.532] Schindlers List (1993)
+    [0.525] Minari (2020)
+    [0.520] Judas and the Black Messiah (2021)
+
+  User 12 (rated 27 movies, avg 3.7⭐):
+    [0.675] The Father (2020)
+    [0.656] Moonlight (2016)
+    [0.605] CODA (2021)
+    [0.601] Nomadland (2020)
+    [0.587] The Silence of the Lambs (1991)
+
+  User 23 (rated 29 movies, avg 3.6⭐):
+    [0.696] Minari (2020)
+    [0.641] American History X (1998)
+    [0.637] Moonlight (2016)
+    [0.582] Nomadland (2020)
+    [0.580] American Fiction (2023)
+
+── 5. GENRE-PREFERENCE RECOMMENDATIONS ─────────────────────────
+  Query genres: ['Action', 'Sci-Fi']
+  Title                                         Genres                               Score
+  ──────────────────────────────────────────────────────────────────────────────────────────
+  The Matrix (1999)                             Action|Sci-Fi                        1.000
+  Terminator 2 (1991)                           Action|Sci-Fi|Thriller               0.815
+  Blade Runner (1982)                           Action|Sci-Fi|Thriller               0.815
+  Tenet (2020)                                  Action|Sci-Fi|Thriller               0.815
+  Jurassic Park (1993)                          Action|Adventure|Sci-Fi              0.510
+  Mad Max Fury Road (2015)                      Action|Adventure|Sci-Fi              0.510
+  Avatar The Way of Water (2022)                Action|Adventure|Sci-Fi              0.510
+  Avengers Endgame (2019)                       Action|Adventure|Sci-Fi              0.510
+
+── 6. SIMILARITY STATISTICS ────────────────────────────────────
+  Mean pairwise similarity   : 0.1346
+  Median pairwise similarity : 0.0419
+  Max pairwise similarity    : 1.0000
+  Min pairwise similarity    : 0.0000
+  Std pairwise similarity    : 0.2061
+
+── 7. METHODOLOGY ──────────────────────────────────────────────
+  Content-Based Filtering using:
+  • TF-IDF on genre strings (unigrams + bigrams)
+  • Cosine similarity matrix between all movie pairs
+  • User profile: weighted avg TF-IDF vector of liked movies
+  • Final score: 75% content similarity + 25% popularity
+
+  Libraries: pandas, numpy, scikit-learn (TfidfVectorizer,
+             cosine_similarity, MinMaxScaler), matplotlib, seaborn
+
+=================================================================
+  END OF REPORT
+=================================================================
